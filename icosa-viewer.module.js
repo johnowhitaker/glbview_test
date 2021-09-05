@@ -36458,7 +36458,7 @@ class GLTFParser$1 {
 					return new Promise( function ( resolve ) {
 
 						var source = json.images[ texture.source ];
-						var sourceUri = source.uri;
+						var sourceUri = source.uri
 						var isObjectURL = false;
 
 						if ( source.extensions && source.extensions[ EXTENSIONS$1.KHR_BINARY_GLTF ] ) {
@@ -36466,7 +36466,7 @@ class GLTFParser$1 {
 							var metadata = source.extensions[ EXTENSIONS$1.KHR_BINARY_GLTF ];
 							var bufferView = dependencies.bufferViews[ metadata.bufferView ];
 							var blob = new Blob( [ bufferView ], { type: metadata.mimeType } );
-							sourceUri = URL.createObjectURL( blob );
+							sourceUri = URL.createObjectURL( blob )
 							isObjectURL = true;
 
 						}
@@ -40075,7 +40075,7 @@ class GLTFParser {
 
 		const URL = self.URL || self.webkitURL;
 
-		let sourceURI = source.uri;
+		let sourceURI = source.uri.replace('https://www.tiltbrush.com/shaders/brushes/', 'brushes/'); // Hakkity hack
 		let isObjectURL = false;
 		let hasAlpha = true;
 
