@@ -11,3 +11,5 @@ Using this to mint on HEN:
 - Mint :)
 
 No guarentee this works <3
+
+PS: Loader.prototype.finishSetup sets up the scene - this is where we'd mess with setting angles, adding lights and backgrounds etc I think.
